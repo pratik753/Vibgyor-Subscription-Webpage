@@ -1,0 +1,394 @@
+ /* reset css */
+ 
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ html {
+     scroll-behavior: smooth;
+ }
+ /* CSS variable */
+ 
+ :root {
+     --navheight: 224px;
+ }
+ /* navigation bar */
+ 
+ #navbar {
+     display: flex;
+     align-items: center;
+     position: relative;
+     top: 0px;
+     left: 0px;
+     position: sticky;
+ }
+ /* navigation bar: logo and image */
+ 
+ #logo {
+     margin: 15px 37px;
+ }
+ 
+ #logo img {
+     height: 95px;
+     width: 145px;
+     margin: 2px 7px;
+ }
+ /* navigation bar: list style */
+ 
+ #navbar ul {
+     display: flex;
+ }
+ 
+ #navbar::before {
+     content: "";
+     position: absolute;
+     background-color: black;
+     height: 100%;
+     width: 100%;
+     top: 0px;
+     left: 0px;
+     z-index: -1;
+     opacity: 0.7;
+ }
+ 
+ #navbar ul li {
+     list-style: none;
+     font-size: 1.3rem;
+     font-family: 'Baloo Bhai', cursive;
+     /* font-weight: bold; */
+ }
+ 
+ #navbar ul li a {
+     color: white;
+     padding: 12px;
+     display: block;
+     text-decoration: none;
+     border-radius: 20px;
+ }
+ 
+ #navbar ul li a:hover {
+     color: black;
+     background-color: white;
+ }
+ /* home Section */
+ 
+ #home {
+     display: flex;
+     flex-direction: column;
+     padding: 5px 200px;
+     justify-content: center;
+     align-items: center;
+     height: 350px;
+ }
+ 
+ #home::before {
+     content: "";
+     position: absolute;
+     /* https://image.freepik.com/free-photo/september-1-wooden-calendar-among-supplies-study-blue-background_79087-1000.jpg */
+     background: url('../image/woodencalendar.jpg') no-repeat center center/cover;
+     top: 0px;
+     height: 500px;
+     width: 100%;
+     z-index: -2;
+     opacity: 0.99;
+ }
+ 
+ #home h1 {
+     color: rgb(3, 3, 3);
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+ }
+ 
+ #home p {
+     color: rgb(0, 0, 0);
+     text-align: center;
+     font-size: 1.3rem;
+     font-family: 'Bree Serif', serif;
+ }
+ /* Services Section */
+ /* .services-container {
+     margin-top: 80px;
+ } */
+ 
+ #services {
+     /* margin-left: 204px; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 20px;
+     flex-wrap: wrap;
+ }
+ 
+ #services .box {
+     border: 2px solid red;
+     border-radius: 25px;
+     margin: 10px;
+     padding: 12px;
+     background-color: rgb(218, 219, 224);
+ }
+ 
+ #services .box img {
+     height: 156px;
+     display: block;
+     margin: auto;
+ }
+ 
+ #services p {
+     font-family: 'Bree Serif', serif;
+ }
+ /* line */
+ 
+ .vertical {
+     margin-bottom: 100px;
+     border-left: 6px solid #99a0d9;
+     height: 200px;
+     position: absolute;
+     left: 70%;
+     z-index: -2;
+     margin-top: 20px;
+ }
+ 
+ .vertical2 {
+     margin-bottom: 100px;
+     border-left: 6px solid #99a0d9;
+     height: 400px;
+     position: absolute;
+     left: 70%;
+     z-index: -2;
+     margin-top: 20px;
+ }
+ /*Image*/
+ 
+ #imgid {
+     z-index: -2;
+     margin-left: 60px;
+     margin-bottom: 30px;
+ }
+ /* Vission Section */
+ 
+ .Vissionhead {
+     font-family: 'Bree Serif', serif;
+     font-size: 3rem;
+     padding: 12px;
+     z-index: -2;
+ }
+ 
+ #Vission {
+     display: block;
+     /* display: flex;
+     flex-direction: column; */
+     padding: 5px 100px;
+     justify-content: center;
+     align-items: center;
+     height: 50%;
+     left: 40%;
+     z-index: -2;
+ }
+ 
+ #Vissionp {
+     font-family: 'Bree Serif', serif;
+     font-size: large;
+     margin-right: 35%;
+     margin-left: 10px;
+     z-index: -2;
+ }
+ 
+ #client-section {
+     z-index: -2;
+     /* height: 340px; */
+     /* position: relative; */
+ }
+ 
+ #client-section::before {
+     content: "";
+     position: absolute;
+     /* https://michaelhyatt.com/wp-content/uploads/2010/06/iStock_000007346114Small.jpg */
+     background: url('../image/time.jpg') no-repeat center center/cover;
+     height: 400px;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.8;
+ }
+ 
+ #clients {
+     display: flex;
+     top: 0px;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .client-item {
+     padding: 34px;
+ }
+ 
+ #clients img {
+     height: 80px;
+ }
+ /* contact Section */
+ 
+ #contact {
+     position: relative;
+     z-index: -2;
+     /* top: 10px; */
+ }
+ 
+ #contact::before {
+     content: "";
+     position: absolute;
+     background: url('../image/contact.jpg') no-repeat center center/cover;
+     height: 100%;
+     width: 100%;
+     z-index: -2;
+     opacity: 0.4;
+ }
+ 
+ #contact-box {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 34px;
+ }
+ 
+ #contact-box input,
+ #contact-box textarea {
+     height: 100%;
+     width: 100%;
+     padding: .5rem;
+     border-radius: 9px;
+     font-size: .9rem;
+ }
+ 
+ #contact-box form {
+     width: 40%;
+ }
+ 
+ #contact-box label {
+     font-size: 1.3rem;
+     font-family: 'Bree Serif', serif;
+ }
+ /* contact 2 */
+ 
+ #contact2 {
+     position: relative;
+     z-index: -2;
+     /* top: 10px; */
+ }
+ 
+ #contact2::before {
+     content: "";
+     position: absolute;
+     background: url('../image/InvestmentBanks.jpg') no-repeat center center/cover;
+     height: 100%;
+     width: 100%;
+     z-index: -2;
+     opacity: 0.4;
+ }
+ 
+ #contact2-box {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-bottom: 34px;
+ }
+ 
+ #contact2-box input,
+ #contact2-box textarea {
+     height: 100%;
+     width: 100%;
+     padding: .5rem;
+     border-radius: 9px;
+     font-size: .9rem;
+ }
+ 
+ #contact2-box form {
+     width: 40%;
+ }
+ 
+ #contact2-box label {
+     font-size: 1.3rem;
+     font-family: 'Bree Serif', serif;
+ }
+ 
+ #foot {
+     margin-left: 50px;
+ }
+ 
+ #foot h4 {
+     color: rgb(119, 228, 228);
+     font-family: 'Bree Serif', serif;
+     margin: 10px;
+     font-size: xx-large;
+ }
+ 
+ #foot p {
+     font-family: 'Bree Serif', serif;
+     margin: 5px;
+     font-size: larger;
+ }
+ 
+ footer {
+     background-color: rgb(75, 71, 71);
+     color: white;
+ }
+ /* utility class */
+ 
+ .h-primary {
+     font-family: 'Bree Serif', serif;
+     font-size: 3rem;
+     padding: 12px;
+ }
+ 
+ .h-secondary {
+     font-family: 'Bree Serif', serif;
+     font-size: 2rem;
+     padding: 12px;
+ }
+ /* submit btn */
+ 
+ .btn {
+     font-family: 'Baloo Bhai', cursive;
+     background-color: rgb(60, 62, 60);
+     color: cornsilk;
+     margin: 4px 8px;
+     padding: 4px 9px;
+     border: 2px solid gray;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+ 
+ .btn:hover {
+     background-color: gray;
+ }
+ /* .......... */
+ 
+ #btnsec {
+     display: flex;
+     flex-direction: column;
+     padding: 5px 200px;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ #btn {
+     z-index: -2;
+     padding: 10px 24px;
+     margin: 12px;
+     color: #fffefe;
+     background-color: #3eb1de;
+     border: 5px solid #0c0c0c;
+     border-radius: 27px;
+     cursor: pointer;
+ }
+ 
+ .center {
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+ }
+ 
+ #last {
+     text-align: center;
+     font-family: 'Bree Serif', serif;
+     color: rgb(222, 206, 242);
+ }
+ /* bootstrap */
